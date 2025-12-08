@@ -1,0 +1,377 @@
+// assets/scss/utilities/_shared-patterns.scss
+// Reusable patterns to reduce code duplication
+
+// ===========================
+// TEXT & ICON UTILITIES
+// ===========================
+
+// Checkmark styling (replaces image icons)
+.checkmark {
+  color: #2e302e;
+  font-weight: $font-weight-bold;
+  font-size: 1.2em;
+  margin-right: 12px;
+}
+
+// ===========================
+// CONTAINER & LAYOUT PATTERNS
+// ===========================
+
+// Standard max-width container
+%container-max-width {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+// Standard section padding
+%section-padding-sm {
+  padding: 64px $spacing-md;
+  
+  @include respond-to('medium') {
+    padding: 80px $spacing-xl;
+  }
+}
+
+%section-padding-lg {
+  padding: 80px $spacing-md;
+  
+  @include respond-to('medium') {
+    padding: 120px $spacing-xl;
+  }
+}
+
+// Grid layouts
+%grid-2col-mobile {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  align-items: center;
+  
+  @include respond-to('medium') {
+    grid-template-columns: 1fr 540px;
+    gap: 80px;
+  }
+}
+
+%grid-3col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  
+  @include respond-to('medium') {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+
+%grid-3col-large {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  
+  @include respond-to('medium') {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 48px;
+  }
+}
+
+// ===========================
+// TYPOGRAPHY PATTERNS
+// ===========================
+
+// Main unified title style (like "RESULTS YOU CAN SEE")
+%main-title {
+  color: #2e302e;
+  font-family: 'Inter', 'Arial Black', Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin: 0 auto 32px auto;
+}
+
+// Large section titles
+%section-title-large {
+  font-size: 40px;
+  font-weight: $font-weight-black;
+  color: $color-text-primary;
+  line-height: 1.1;
+  margin: 0 0 32px 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  
+  @include respond-to('medium') {
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+}
+
+%section-title-xl {
+  font-size: 48px;
+  font-weight: $font-weight-black;
+  color: $color-text-primary;
+  line-height: 1.1;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  
+  @include respond-to('medium') {
+    font-size: 56px;
+  }
+}
+
+// Description text
+%description-text {
+  font-size: 15px;
+  color: $color-text-secondary;
+  line-height: 1.6;
+  margin: 0;
+}
+
+// Small label/pill
+%label-pill {
+  display: inline-block;
+  background: $color-primary-yellow;
+  color: $color-text-primary;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: $font-weight-medium;
+  letter-spacing: 0.2px;
+  width: fit-content;
+  margin-bottom: 8px;
+}
+
+// ===========================
+// LIST PATTERNS
+// ===========================
+
+// Feature/benefit lists with icons
+%check-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0 0;
+  display: grid;
+  gap: 16px;
+  
+  li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    color: $color-text-primary;
+    font-weight: $font-weight-medium;
+    margin: 0;
+  }
+}
+
+%check-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+// Footer/nav link lists
+%link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+%link-list-item {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  
+  &:hover {
+    color: $color-white;
+  }
+}
+
+// ===========================
+// BUTTON PATTERNS
+// ===========================
+
+// Primary CTA button
+%button-primary {
+  display: inline-block;
+  background-color: $color-navy-dark;
+  color: $color-white;
+  padding: 16px 32px;
+  border-radius: 30px;
+  font-weight: $font-weight-semibold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  width: fit-content;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background-color: $color-primary-navy;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+}
+
+// Secondary button
+%button-secondary {
+  display: inline-block;
+  background: $color-primary-yellow;
+  color: $color-text-primary;
+  padding: 12px 28px;
+  border-radius: 25px;
+  font-size: 13px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    background: $color-primary-yellow-dark;
+    transform: translateY(-2px);
+  }
+}
+
+// ===========================
+// CARD & IMAGE PATTERNS
+// ===========================
+
+// Card with rounded corners
+%card-rounded {
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+// Image wrapper with fixed aspect
+%image-wrapper-4-5 {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4/5;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+%image-wrapper-1-1 {
+  width: 100%;
+  max-width: 180px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+%image-full {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+// ===========================
+// AVATAR PATTERNS
+// ===========================
+
+%avatar-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid $color-text-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+// ===========================
+// ICON/SVG PATTERNS
+// ===========================
+
+%icon-sm {
+  width: 24px;
+  height: 24px;
+}
+
+%icon-md {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// ===========================
+// FORM PATTERNS
+// ===========================
+
+%input-base {
+  padding: 16px 24px;
+  border: none;
+  font-size: 15px;
+  background: $color-white;
+  color: $color-text-primary;
+  
+  &::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px $color-primary-yellow;
+  }
+}
+
+// ===========================
+// UTILITY SPACING
+// ===========================
+
+.container-max {
+  @extend %container-max-width;
+}
+
+.section-padding {
+  @extend %section-padding-sm;
+}
+
+.section-padding-lg {
+  @extend %section-padding-lg;
+}
+
+.section-title-lg {
+  @extend %section-title-large;
+}
+
+.section-title-xl {
+  @extend %section-title-xl;
+}
+
+.label-pill {
+  @extend %label-pill;
+}
+
+.check-list {
+  @extend %check-list;
+}
+
+.check-icon {
+  @extend %check-icon;
+}
+
+.button-primary {
+  @extend %button-primary;
+}
+
+.button-secondary {
+  @extend %button-secondary;
+}

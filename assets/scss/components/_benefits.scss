@@ -1,0 +1,119 @@
+// assets/scss/components/_benefits.scss
+
+.benefits-section {
+  background: $color-background-light;
+  @extend %section-padding-sm;
+}
+
+.benefits-container {
+  @extend %container-max-width;
+  @extend %grid-3col;
+}
+
+.benefit-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 24px;
+}
+
+.benefit-image-wrapper {
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit-image {
+  @extend %image-full;
+}
+
+.benefit-title {
+  font-size: 18px;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  line-height: 1.4;
+  margin: 0;
+}
+
+// Daily Benefits Section
+.daily-benefits-section {
+  background: $color-background-light;
+  @extend %section-padding-sm;
+}
+
+.daily-benefits-header {
+  @extend %container-max-width;
+  margin: 0 auto 60px;
+  padding: 0 $spacing-md;
+
+  @include respond-to('medium') {
+    padding: 0 $spacing-xl;
+  }
+}
+
+.daily-benefits-title {
+  @extend %section-title-xl;
+  
+  @include respond-to('medium') {
+    font-size: 56px;
+  }
+}
+
+.daily-benefits-subtitle {
+  @extend %description-text;
+}
+
+.daily-benefits-cards {
+  @extend %container-max-width;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  padding: 0 $spacing-md;
+
+  @include respond-to('medium') {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 0 $spacing-xl;
+  }
+}
+
+.daily-benefit-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.daily-benefit-image-wrapper {
+  @extend %image-wrapper-4-5;
+}
+
+.daily-benefit-image {
+  @extend %image-full;
+}
+
+.daily-benefit-info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.daily-benefit-card-title {
+  font-size: 18px;
+  font-weight: $font-weight-black;
+  color: $color-text-primary;
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.8px;
+}
+
+.daily-benefit-card-desc {
+  @extend %description-text;
+}

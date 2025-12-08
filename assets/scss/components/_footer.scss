@@ -1,0 +1,196 @@
+// assets/scss/components/_footer.scss
+
+// Site Footer
+.site-footer {
+  background: #2c3441;
+  color: $color-white;
+  padding: 60px $spacing-md 40px;
+
+  @include respond-to('medium') {
+    padding: 80px $spacing-xl 60px;
+  }
+}
+
+.site-footer__container {
+  @extend %container-max-width;
+}
+
+// Newsletter Section
+.site-footer__newsletter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  margin-bottom: 60px;
+
+  @include respond-to('medium') {
+    grid-template-columns: 1fr auto;
+    align-items: flex-start;
+  }
+}
+
+.site-footer__newsletter-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-footer__newsletter-title {
+  font-size: 32px;
+  font-weight: $font-weight-black;
+  color: $color-white;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -0.5px;
+
+  @include respond-to('medium') {
+    font-size: 40px;
+  }
+}
+
+.site-footer__newsletter-subtitle {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.site-footer__newsletter-form {
+  display: flex;
+  gap: 0;
+  max-width: 600px;
+  margin-top: 12px;
+}
+
+.site-footer__newsletter-input {
+  @extend %input-base;
+  flex: 1;
+  border-radius: 0;
+}
+
+.site-footer__newsletter-submit {
+  padding: 16px 32px;
+  background: $color-navy-dark;
+  color: $color-white;
+  border: none;
+  font-weight: $font-weight-bold;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $color-primary-navy;
+  }
+}
+
+// Social Icons
+.site-footer__social {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+}
+
+.site-footer__social-link {
+  @extend %icon-md;
+  background: $color-white;
+  color: #2c3441;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: $color-primary-yellow;
+    transform: translateY(-2px);
+  }
+
+  svg {
+    @extend %icon-sm;
+  }
+}
+
+// Footer Logo
+.site-footer__logo {
+  font-size: 80px;
+  font-weight: $font-weight-black;
+  color: $color-white;
+  line-height: 1;
+  text-align: right;
+
+  @include respond-to('medium') {
+    font-size: 120px;
+  }
+}
+
+// Footer Links
+.site-footer__links {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+
+  @include respond-to('medium') {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+  }
+
+  @include respond-to('large') {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+
+.site-footer__column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-footer__column-title {
+  font-size: 16px;
+  font-weight: $font-weight-bold;
+  color: $color-white;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.site-footer__column-list {
+  @extend %link-list;
+}
+
+.site-footer__link {
+  @extend %link-list-item;
+}
+
+// Footer Bottom
+.site-footer__bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  padding-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+
+  @include respond-to('medium') {
+    grid-template-columns: auto 1fr;
+    gap: 40px;
+    align-items: flex-start;
+  }
+}
+
+.site-footer__copyright {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  white-space: nowrap;
+}
+
+.site-footer__disclaimer {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+  line-height: 1.6;
+  max-width: 800px;
+
+  @include respond-to('medium') {
+    text-align: right;
+    margin-left: auto;
+  }
+}

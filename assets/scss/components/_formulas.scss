@@ -1,0 +1,107 @@
+// assets/scss/components/_formulas.scss
+
+.formulas-section {
+  background: #1f212e;
+  color: $color-white;
+  @extend %section-padding-lg;
+}
+
+.formulas-container {
+  @extend %container-max-width;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  text-align: center;
+}
+
+.formulas-pill {
+  @extend %label-pill;
+}
+
+.formulas-title {
+  font-size: 44px;
+  font-weight: $font-weight-black;
+  letter-spacing: -1px;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include respond-to('medium') {
+    font-size: 56px;
+  }
+}
+
+.formulas-subtitle {
+  font-size: 16px;
+  color: rgba($color-white, 0.75);
+  margin: 0;
+
+  span {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+    color: $color-white;
+  }
+}
+
+.formulas-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+
+  @include respond-to('medium') {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+.formulas-content--reverse {
+  @include respond-to('medium') {
+    grid-template-columns: 1fr 1fr;
+    direction: rtl;
+
+    .formulas-copy {
+      direction: ltr;
+    }
+  }
+}
+
+.formulas-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  max-width: 540px;
+}
+
+.formula-name {
+  font-size: 36px;
+  font-weight: $font-weight-black;
+  line-height: 1.05;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include respond-to('medium') {
+    font-size: 42px;
+  }
+}
+
+.formula-desc {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba($color-white, 0.82);
+  margin: 0;
+  max-width: 560px;
+}
+
+.formulas-image {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  filter: drop-shadow(0 24px 28px rgba(0, 0, 0, 0.35));
+  margin: 0 auto;
+}

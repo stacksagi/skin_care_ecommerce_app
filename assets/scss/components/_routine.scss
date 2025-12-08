@@ -1,0 +1,133 @@
+// assets/scss/components/_routine.scss
+
+.routine-section {
+  background: #EFF7FA;
+  padding: 64px $spacing-md;
+
+  @include respond-to('medium') {
+    padding: 80px $spacing-xl;
+  }
+}
+
+.routine-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.routine-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.routine-subtitle {
+  font-size: 16px;
+  color: $color-text-primary;
+  letter-spacing: 0.5px;
+  margin: 0;
+  font-weight: $font-weight-normal;
+}
+
+.routine-clock {
+  color: $color-text-primary;
+  width: 80px;
+  height: 80px;
+}
+
+.routine-title {
+  font-size: 48px;
+  font-weight: $font-weight-extrabold;
+  color: $color-text-primary;
+  letter-spacing: -1px;
+  margin: 0;
+  text-transform: uppercase;
+
+  @include respond-to('medium') {
+    font-size: 56px;
+  }
+}
+
+.routine-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: flex-start;
+
+  @include respond-to('medium') {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+  }
+}
+
+.routine-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.routine-image-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 4/5;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.routine-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.routine-number {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 40px;
+  height: 40px;
+  background: $color-white;
+  border: 2px solid $color-text-primary;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $font-weight-bold;
+  font-size: 18px;
+  color: $color-text-primary;
+}
+
+.routine-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.routine-product {
+  width: 80px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.routine-product-image {
+  width: 80px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.routine-description {
+  font-size: 15px;
+  color: $color-text-primary;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0;
+  flex: 1;
+}

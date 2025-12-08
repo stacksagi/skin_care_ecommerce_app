@@ -1,0 +1,112 @@
+// assets/scss/components/_testimonials.scss
+
+.testimonials-section {
+  background: #2c2e3f;
+  color: $color-white;
+  padding: 80px $spacing-md;
+
+  @include respond-to('medium') {
+    padding: 120px $spacing-xl;
+  }
+}
+
+.testimonials-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.testimonials-title {
+  font-size: 32px;
+  font-weight: $font-weight-semibold;
+  text-align: center;
+  margin: 0 0 60px 0;
+  color: $color-primary-yellow;
+
+  @include respond-to('medium') {
+    font-size: 36px;
+    margin-bottom: 80px;
+  }
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+
+  @include respond-to('medium') {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+}
+
+.testimonials-card {
+  background: $color-white;
+  padding: 40px 32px;
+  border-radius: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.testimonials-rating {
+  display: flex;
+  gap: 6px;
+}
+
+.testimonials-star {
+  width: 24px;
+  height: 24px;
+  color: $color-text-primary;
+  flex-shrink: 0;
+}
+
+.testimonials-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #5a6b7d;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.testimonials-author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.testimonials-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid $color-text-primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: $font-weight-bold;
+  color: $color-text-primary;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.testimonials-author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.testimonials-author-name {
+  font-size: 16px;
+  font-weight: $font-weight-bold;
+  margin: 0;
+  color: $color-text-primary;
+}
+
+.testimonials-author-role {
+  font-size: 12px;
+  color: #8a96a8;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: $font-weight-medium;
+}

@@ -1,0 +1,67 @@
+// assets/scss/components/_get-the-set.scss
+
+// Get The Set Section
+.get-the-set-section {
+  background: $color-white;
+  @extend %section-padding-sm;
+  border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+}
+
+.get-the-set-container {
+  @extend %container-max-width;
+  @extend %grid-2col-mobile;
+}
+
+.get-the-set-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.get-the-set-label {
+  @extend %label-pill;
+
+  &--plain {
+    background: transparent;
+    padding: 0;
+    color: $color-text-secondary;
+  }
+}
+
+.get-the-set-title {
+  @extend %section-title-xl;
+}
+
+.get-the-set-copy {
+  @extend %description-text;
+  max-width: 480px;
+}
+
+.get-the-set-features {
+  @extend %check-list;
+}
+
+.get-the-set-check {
+  @extend %check-icon;
+}
+
+.get-the-set-cta {
+  @extend %button-primary;
+  margin-top: 8px;
+}
+
+.get-the-set-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 24px;
+  background: $color-white;
+}
+
+.get-the-set-image {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+}

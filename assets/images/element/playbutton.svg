@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="68px" height="68px" viewBox="0 0 68 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>element/playbutton</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing" transform="translate(-151, -9625)">
+            <g id="Group" transform="translate(19, 9379)">
+                <g id="element/playbutton" transform="translate(132, 246)">
+                    <circle id="Oval" stroke="#002657" stroke-width="1.5" fill="#FFFFFF" cx="34" cy="34" r="33.25"></circle>
+                    <path d="M26.5084746,21.5294787 L26.5084746,46.9524095 C26.5084746,48.056979 27.4039051,48.9524095 28.5084746,48.9524095 C28.9655435,48.9524095 29.4088231,48.7958531 29.7645131,48.5088051 L45.3463094,35.9340221 C46.2058829,35.2403312 46.3403574,33.9811615 45.6466664,33.121588 C45.5619154,33.0165704 45.466753,32.9204003 45.362634,32.8345478 L29.7808377,19.9864 C28.9286189,19.2836932 27.6681026,19.4048967 26.9653958,20.2571155 C26.6700161,20.615342 26.5084746,21.0651777 26.5084746,21.5294787 Z" id="Path-6" fill="#002657"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

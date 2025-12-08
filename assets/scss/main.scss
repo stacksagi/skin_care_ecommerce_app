@@ -1,0 +1,31 @@
+@import "components/hero";
+@import "components/benefits";
+// ...existing code...
+// assets/scss/main.scss
+// Main SCSS entry point - imports all partial files
+
+// Settings (Variables, colors, typography)
+@import 'settings/variables';
+@import 'settings/colors';
+@import 'settings/typography';
+
+// Utilities (Mixins, functions, shared patterns)
+@import 'utilities/mixins';
+@import 'utilities/shared-patterns';
+
+// Base styles
+@import 'base/global';
+
+// Components
+@import 'components/promo-banner';
+@import 'components/site-header';
+@import 'components/hero';
+@import 'components/testimonial';
+@import 'components/feature';
+@import 'components/benefits';
+@import 'components/routine';
+@import 'components/get-the-set';
+@import 'components/formulas';
+@import 'components/ingredients';
+@import 'components/testimonials';
+@import 'components/footer';

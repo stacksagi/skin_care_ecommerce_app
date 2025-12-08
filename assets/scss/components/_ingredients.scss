@@ -1,0 +1,61 @@
+// assets/scss/components/_ingredients.scss
+
+// Ingredients Section
+.ingredients-section {
+  background: $color-background-light;
+  @extend %section-padding-sm;
+}
+
+.ingredients-container {
+  @extend %container-max-width;
+  padding: 0 $spacing-md;
+
+  @include respond-to('medium') {
+    padding: 0 $spacing-xl;
+  }
+}
+
+.ingredients-title {
+  @extend %section-title-large;
+}
+
+.ingredients-cta {
+  @extend %button-secondary;
+  margin-bottom: 48px;
+}
+
+.ingredients-grid {
+  @extend %grid-3col-large;
+}
+
+.ingredient-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+
+.ingredient-image-wrapper {
+  @extend %image-wrapper-1-1;
+}
+
+.ingredient-image {
+  @extend %image-full;
+}
+
+.ingredient-name {
+  font-size: 16px;
+  font-weight: $font-weight-semibold;
+  color: $color-text-primary;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.ingredient-usage {
+  font-size: 12px;
+  font-weight: $font-weight-medium;
+  color: $color-text-secondary;
+  margin: 0;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}

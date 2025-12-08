@@ -1,0 +1,19 @@
+// assets/scss/settings/_variables.scss
+$base-font-size: 16px;
+$base-line-height: 1.5;
+$border-radius: 8px;
+
+// Spacing scale
+$spacing-unit: 8px;
+$spacing-xs: $spacing-unit;
+$spacing-sm: $spacing-unit * 2;
+$spacing-md: $spacing-unit * 3;
+$spacing-lg: $spacing-unit * 4;
+$spacing-xl: $spacing-unit * 6;
+$spacing-2xl: $spacing-unit * 8;
+$spacing-3xl: $spacing-unit * 12;
+
+// Breakpoints
+$breakpoint-small: 640px;
+$breakpoint-medium: 1024px;
+$breakpoint-large: 1200px;

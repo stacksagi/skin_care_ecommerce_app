@@ -1,0 +1,14 @@
+// assets/scss/components/_promo-banner.scss
+.promo-banner {
+    background-color: $color-primary-yellow;
+    padding: $spacing-sm $spacing-md;
+    text-align: center;
+    
+    &__text {
+        font-size: $font-size-sm;
+        font-weight: $font-weight-bold;
+        color: $color-text-primary;
+        margin: 0;
+        letter-spacing: 0.5px;
+    }
+}

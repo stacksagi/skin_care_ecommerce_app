@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - D1 Skincare</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!-- Promo Banner -->
+    <div class="promo-banner">
+        <p class="promo-banner__text">FREE SHIPPING ON US ORDERS OVER $100</p>
+    </div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="site-header__inner">
+            <!-- Logo -->
+            <a href="index.html" class="site-header__logo">D1</a>
+
+            <!-- Navigation -->
+            <nav class="site-header__nav">
+                <button class="site-header__menu-toggle show-for-small-only" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <div class="site-header__actions hide-for-small-only">
+                    <a href="index.html" class="site-header__nav-link">HOME</a>
+                    <a href="products.html" class="site-header__nav-link">PRODUCTS</a>
+                    <a href="about.html" class="site-header__nav-link">ABOUT</a>
+                    <a href="contact.html" class="site-header__nav-link active">CONTACT</a>
+                    <a href="#" class="site-header__cta">GET STARTED</a>
+                    <a href="#" class="site-header__cart" aria-label="Shopping cart">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="9" cy="21" r="1"></circle>
+                            <circle cx="20" cy="21" r="1"></circle>
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+                        </svg>
+                        <span class="site-header__cart-count">1</span>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero" id="contact-hero">
+        <div class="contact-hero__content">
+            <h1 class="contact-hero__title">GET IN TOUCH</h1>
+            <p class="contact-hero__subtitle">We'd love to hear from you. Send us a message anytime.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="grid-container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="main-title">CONTACT INFORMATION</h2>
+                    
+                    <div class="contact-item">
+                        <h3>📧 Email</h3>
+                        <p><a href="mailto:hello@d1skincare.com">hello@d1skincare.com</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📞 Phone</h3>
+                        <p><a href="tel:1-800-D1-SKIN">1-800-D1-SKIN (1-800-347-5466)</a></p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>📍 Mailing Address</h3>
+                        <p>
+                            D1 Skincare<br>
+                            123 Skincare Drive<br>
+                            New York, NY 10001<br>
+                            United States
+                        </p>
+                    </div>
+
+                    <div class="contact-item">
+                        <h3>⏱ Response Time</h3>
+                        <p>We typically respond to inquiries within 24 hours during business days.</p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h2 class="main-title">SEND US A MESSAGE</h2>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="hero__cta">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="grid-container">
+            <div class="site-footer__content">
+                <div class="site-footer__column">
+                    <h3 class="site-footer__column-title">CUSTOMER CARE</h3>
+                    <ul class="site-footer__column-list">
+                        <li><a href="#" class="site-footer__link">Help Center</a></li>
+                        <li><a href="#" class="site-footer__link">Track Order</a></li>
+                        <li><a href="#" class="site-footer__link">Returns</a></li>
+                    </ul>
+                </div>
+            
+                <div class="site-footer__column">
+                    <h3 class="site-footer__column-title">COMPANY</h3>
+                    <ul class="site-footer__column-list">
+                        <li><a href="index.html" class="site-footer__link">Home</a></li>
+                        <li><a href="products.html" class="site-footer__link">Products</a></li>
+                        <li><a href="about.html" class="site-footer__link">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Footer Bottom -->
+            <div class="site-footer__bottom">
+                <p class="site-footer__copyright">©D1 2025 - site by manufactur</p>
+                <p class="site-footer__disclaimer">
+                    These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease. Lorem ipsum dolor sit amet.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

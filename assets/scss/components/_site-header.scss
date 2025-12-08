@@ -1,0 +1,86 @@
+// assets/scss/components/_site-header.scss
+.site-header {
+    background-color: $color-white;
+    padding: $spacing-lg $spacing-md;
+    border-bottom: 1px solid $color-border;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    @include respond-to('medium') {
+        padding: $spacing-lg $spacing-xl;
+    }
+}
+
+.site-header__logo {
+    font-size: $font-size-2xl;
+    font-weight: $font-weight-extrabold;
+    color: $color-text-primary;
+    letter-spacing: -1px;
+}
+
+.site-header__actions {
+    @include flex-between;
+    gap: $spacing-lg;
+}
+
+.site-header__cta {
+    display: inline-block;
+    background-color: $color-navy-dark;
+    color: $color-white;
+    padding: $spacing-sm $spacing-lg;
+    border-radius: 25px;
+    font-weight: $font-weight-semibold;
+    font-size: $font-size-sm;
+    letter-spacing: 0.5px;
+    
+    @include hover-effect {
+        background-color: $color-primary-navy;
+        transform: translateY(-2px);
+        @include box-shadow(2);
+    }
+}
+
+.site-header__cart {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: $color-text-primary;
+    
+    &:hover {
+        color: $color-primary-yellow;
+    }
+}
+
+.site-header__cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: $color-primary-yellow;
+    color: $color-text-primary;
+    font-size: $font-size-xs;
+    font-weight: $font-weight-bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    @include flex-center;
+}
+
+.site-header__menu-toggle {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    border: none;
+    gap: 5px;
+    padding: 5px;
+    cursor: pointer;
+    
+    span {
+        width: 25px;
+        height: 3px;
+        background-color: $color-text-primary;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+}

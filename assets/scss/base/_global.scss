@@ -1,0 +1,104 @@
+// assets/scss/base/_global.scss
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $base-font-size;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    line-height: $base-line-height;
+    color: $color-text-primary;
+    background-color: $color-white;
+    overflow-x: hidden;
+}
+
+// Headings
+h1, h2, h3, h4, h5, h6 {
+    font-weight: $font-weight-bold;
+    line-height: 1.2;
+    margin-bottom: $spacing-md;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: $font-size-7xl;
+    font-weight: $font-weight-black;
+    line-height: 0.65;
+    letter-spacing: $letter-spacing-tight;
+}
+
+h2 {
+    font-size: $font-size-4xl;
+}
+
+h3 {
+    font-size: $font-size-3xl;
+}
+
+// Paragraphs
+p {
+    margin-bottom: $spacing-md;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Links
+a {
+    color: $color-primary-yellow;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+    &:hover {
+        color: $color-primary-yellow-dark;
+    }
+}
+
+// Buttons - Base styles
+button, .button, [role="button"] {
+    font-family: $font-family-base;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    
+    &:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}
+
+// Images
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+// Utility classes
+.container-fluid {
+    width: 100%;
+    padding: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
